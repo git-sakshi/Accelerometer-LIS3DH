@@ -5,12 +5,12 @@ extern I2C_HandleTypeDef hi2c1;
 
 void config_lis3dh_reg1(void)
 {
-	lis3dh_reg_t.lis3dh_byte = 0x07;				/* Default */
-//	lis3dh_reg_t.cfg_reg_1.x_enable = 1;
-//	lis3dh_reg_t.cfg_reg_1.y_enable = 1;
-//	lis3dh_reg_t.cfg_reg_1.z_enable = 1;
-//	lis3dh_reg_t.cfg_reg_1.lp_enable = 0;
-	lis3dh_reg_t.cfg_reg_1.odr = LIS3DH_1Hz;
+	lis3dh_reg_t.lis3dh_byte 		= 0x07;			/* Default */
+//	lis3dh_reg_t.cfg_reg_1.x_enable 	= 1;
+//	lis3dh_reg_t.cfg_reg_1.y_enable 	= 1;
+//	lis3dh_reg_t.cfg_reg_1.z_enable 	= 1;
+//	lis3dh_reg_t.cfg_reg_1.lp_enable 	= 0;
+	lis3dh_reg_t.cfg_reg_1.odr 		= LIS3DH_1Hz;
 }
 
 void config_lis3dh_reg2(void)
