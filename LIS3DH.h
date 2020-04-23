@@ -8,11 +8,11 @@
     I2C ADDRESS/BITS
     -----------------------------------------------------------------------*/
 	/* Address Pad Ground */
-#define LIS3DH_Write_Address_G		0x0030
+#define LIS3DH_Write_Address_G	    0x0030
 #define LIS3DH_Read_Address_G	    0x0031	    
 
 	/* Address Pad Connected to Vdd */
-#define LIS3DH_Write_Address_V 		0x0032
+#define LIS3DH_Write_Address_V 	    0x0032
 #define LIS3DH_Read_Address_V	    0x0033
 
 /*=========================================================================*/
@@ -60,7 +60,7 @@
 /* REG_1 */
 typedef enum {
 	LIS3DH_POWERDOWN,
-    LIS3DH_1Hz,	   	
+    	LIS3DH_1Hz,	   	
 	LIS3DH_10Hz,		
 	LIS3DH_25Hz,		
 	LIS3DH_50Hz,		
@@ -77,7 +77,7 @@ typedef struct {
 	uint8_t y_enable	:1;
 	uint8_t z_enable	:1;
 	uint8_t lp_enable	:1;
-	uint8_t odr			:4; 		/* Define ODR in macro @LIS3DH_REG1 */
+	uint8_t odr		:4; 		/* Define ODR in macro @LIS3DH_REG1 */
 }lis3dh_reg1_t;
 
 /* REG_2 */
@@ -92,7 +92,7 @@ typedef struct {
 	uint8_t hp_ia1		:1;
 	uint8_t hp_ia2		:1;
 	uint8_t hpclick		:1;
-	uint8_t fds			:1;
+	uint8_t fds		:1;
 	uint8_t hp_cutoff	:2;			/* Refer Datasheet and application note */
 	uint8_t hp_mode		:2;			/* Mode defined in macro @LIS3DH_REG2 */
 }lis3dh_reg2_t;
@@ -129,8 +129,8 @@ typedef	struct {
 	uint8_t	self_test	:2;
 	uint8_t	hr_mode		:1;
 	uint8_t	full_scale	:2;
-	uint8_t	ble			:1;
-	uint8_t	bdu			:1;
+	uint8_t	ble		:1;
+	uint8_t	bdu		:1;
 }lis3dh_reg4_t;
 
 /* REG_5 */
@@ -139,17 +139,17 @@ typedef	struct {
 	uint8_t	lir_int2	:1;
 	uint8_t	d4d_int1	:1;
 	uint8_t	lir_int1	:1;
-	uint8_t	na1			:1;
-	uint8_t	na2			:1;
+	uint8_t	na1		:1;
+	uint8_t	na2		:1;
 	uint8_t	fifo_enable	:1;
 	uint8_t	boot		:1;
 }lis3dh_reg5_t;
 
 /* REG_6 */
 typedef	struct {
-	uint8_t	na1			:1;
+	uint8_t	na1		:1;
 	uint8_t	int_pol		:1;
-	uint8_t	na2			:1;
+	uint8_t	na2		:1;
 	uint8_t	i2_act		:1;
 	uint8_t	i2_boot		:1;
 	uint8_t	i2_ia2		:1;
@@ -177,14 +177,14 @@ typedef	struct {
 
 /* INT1_THS */
 typedef	struct {
-	uint8_t	ths			:7;
-	uint8_t	not_used_01 :1;
+	uint8_t	ths		:7;
+	uint8_t	not_used_01 	:1;
 }lis3dh_int1ths_t;
 
 /* INT1_DUR */
 typedef struct{
-	uint8_t	dur			:7;
-	uint8_t	not_used_02 :1;
+	uint8_t	dur		:7;
+	uint8_t	not_used_02 	:1;
 }lis3dh_int1dur_t;
 
 /* LIS3DH union */
@@ -197,8 +197,8 @@ typedef union {
 	lis3dh_reg6_t		cfg_reg_6;
 	lis3dh_int1cfg_t	cfg_reg_int1cfg;
 	lis3dh_int1ths_t	cfg_reg_int1ths;
-	lis3dh_int1dur_t    cfg_reg_int1dur;
-    uint8_t             lis3dh_byte;
+	lis3dh_int1dur_t    	cfg_reg_int1dur;
+    	uint8_t             	lis3dh_byte;
 }u_lis3dh_reg_t;
 
 /* User defined functions */
