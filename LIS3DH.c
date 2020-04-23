@@ -15,13 +15,13 @@ void config_lis3dh_reg1(void)
 
 void config_lis3dh_reg2(void)
 {
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
-	lis3dh_reg_t.cfg_reg_2.hp_ia1 = 1;
-//	lis3dh_reg_t.cfg_reg_2.hp_ia2 = 0;	
-//	lis3dh_reg_t.cfg_reg_2.hpclick = 0;
-//	lis3dh_reg_t.cfg_reg_2.fds	= 0;	
-//	lis3dh_reg_t.cfg_reg_2.hp_cutoff = 0;
-//  lis3dh_reg_t.cfg_reg_2.hp_mode = HP_NORMAL_RESET_MODE;
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
+	lis3dh_reg_t.cfg_reg_2.hp_ia1 		= 1;
+//	lis3dh_reg_t.cfg_reg_2.hp_ia2 		= 0;	
+//	lis3dh_reg_t.cfg_reg_2.hpclick 		= 0;
+//	lis3dh_reg_t.cfg_reg_2.fds		= 0;	
+//	lis3dh_reg_t.cfg_reg_2.hp_cutoff 	= 0;
+//  	lis3dh_reg_t.cfg_reg_2.hp_mode 		= HP_NORMAL_RESET_MODE;
 }
 
 void config_lis3dh_reg3(void)
@@ -30,11 +30,11 @@ void config_lis3dh_reg3(void)
 //	lis3dh_reg_t.cfg_reg_3.not_used_01	= 0;
 //	lis3dh_reg_t.cfg_reg_3.i1_overrun	= 0;
 //	lis3dh_reg_t.cfg_reg_3.i1_wtm		= 0;
-//	lis3dh_reg_t.cfg_reg_3.i1_321da	    = 0;
-//	lis3dh_reg_t.cfg_reg_3.i1_zyxda	    = 0;
+//	lis3dh_reg_t.cfg_reg_3.i1_321da	    	= 0;
+//	lis3dh_reg_t.cfg_reg_3.i1_zyxda	    	= 0;
 //	lis3dh_reg_t.cfg_reg_3.i1_ia2		= 0;
 	lis3dh_reg_t.cfg_reg_3.i1_ia1		= 1;
-//	lis3dh_reg_t.cfg_reg_3.i1_click	    = 0;
+//	lis3dh_reg_t.cfg_reg_3.i1_click	    	= 0;
 }
 
 void config_lis3dh_reg4(void)
@@ -44,29 +44,29 @@ void config_lis3dh_reg4(void)
 //	lis3dh_reg_t.cfg_reg_4.self_test	= ST_NORMAL_MODE;
 	lis3dh_reg_t.cfg_reg_4.hr_mode		= 1;
 //	lis3dh_reg_t.cfg_reg_4.full_scale	= FS_2G;
-//	lis3dh_reg_t.cfg_reg_4.ble			= 0;
-	lis3dh_reg_t.cfg_reg_4.bdu			= 1;
+//	lis3dh_reg_t.cfg_reg_4.ble		= 0;
+	lis3dh_reg_t.cfg_reg_4.bdu		= 1;
 }
 
 void config_lis3dh_reg5(void)
 {
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
 //	lis3dh_reg_t.cfg_reg_5.d4d_int2		= 0;
 //	lis3dh_reg_t.cfg_reg_5.lir_int2		= 0;
 //	lis3dh_reg_t.cfg_reg_5.d4d_int1		= 0;
 	lis3dh_reg_t.cfg_reg_5.lir_int1		= 1;
-//	lis3dh_reg_t.cfg_reg_5.na1			= 0;
-//	lis3dh_reg_t.cfg_reg_5.na2			= 0;
+//	lis3dh_reg_t.cfg_reg_5.na1		= 0;
+//	lis3dh_reg_t.cfg_reg_5.na2		= 0;
 //	lis3dh_reg_t.cfg_reg_5.fifo_enable	= 0;
-	lis3dh_reg_t.cfg_reg_5.boot			= 1;
+	lis3dh_reg_t.cfg_reg_5.boot		= 1;
 }
 
 void config_lis3dh_reg6(void)
 {	
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
-	lis3dh_reg_t.cfg_reg_6.na1			= 0;
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
+	lis3dh_reg_t.cfg_reg_6.na1		= 0;
 	lis3dh_reg_t.cfg_reg_6.int_pol		= 0;
-	lis3dh_reg_t.cfg_reg_6.na2			= 0;
+	lis3dh_reg_t.cfg_reg_6.na2		= 0;
 	lis3dh_reg_t.cfg_reg_6.i2_act		= 0;
 	lis3dh_reg_t.cfg_reg_6.i2_boot		= 0;
 	lis3dh_reg_t.cfg_reg_6.i2_ia2		= 0;
@@ -76,19 +76,19 @@ void config_lis3dh_reg6(void)
 
 void config_lis3dh_int1ths(void)
 {	
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
-	lis3dh_reg_t.cfg_reg_int1ths.ths = 0x08;
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
+	lis3dh_reg_t.cfg_reg_int1ths.ths 	= 0x08;
 }
 
 void config_lis3dh_int1dur(void)
 {
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
-	lis3dh_reg_t.cfg_reg_int1dur.dur = 0x3C;		/* 1 minute - 0x3C */
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
+	lis3dh_reg_t.cfg_reg_int1dur.dur 	= 0x3C;			/* 1 minute - 0x3C */
 }
 
 void config_lis3dh_int1cfg(void)
 {
-	lis3dh_reg_t.lis3dh_byte = 0x00;				/* Default */
+	lis3dh_reg_t.lis3dh_byte 		= 0x00;			/* Default */
 	lis3dh_reg_t.cfg_reg_int1cfg.xlie	= 1;
 //	lis3dh_reg_t.cfg_reg_int1cfg.xhlie	= 0;
 	lis3dh_reg_t.cfg_reg_int1cfg.ylie	= 1;
